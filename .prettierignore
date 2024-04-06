@@ -1,0 +1,18 @@
+# Ignore artifacts:
+dist
+
+**/.git
+**/.svn
+**/.hg
+**/node_modules
+**/.next
+
+.eslintrc.json
+.prettierrc
+.prettierignore
+.gitignore
+next-env.d.ts
+package.json
+package-lock.json
+README.md
+tsconfig.json
