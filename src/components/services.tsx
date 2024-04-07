@@ -1,3 +1,4 @@
+import Image from "next/image";
 export default function Services() {
 	return (
 		<>
@@ -13,7 +14,12 @@ export default function Services() {
 						<span className="w-full text-center text-sm font-bold text-[#08B3CE] lg:text-start lg:text-base">
 							Estrategia y desarrollo de negocios
 						</span>
-						<img src="/service1.png" alt="service1" />
+						<Image
+							src="/service1.png"
+							alt="service1"
+							width={1064}
+							height={396}
+						/>
 						<p className="px-8 text-xs font-[400] lg:px-0 lg:text-lg">
 							Te ayudamos a crecer de una manera organizada y con
 							la estrategia correcta, para lograr una mayor
@@ -27,7 +33,12 @@ export default function Services() {
 						<span className="w-full text-center text-sm font-bold text-[#08B3CE] lg:text-start lg:text-base">
 							Mejoramiento de procesos
 						</span>
-						<img src="/service2.png" alt="service2" />
+						<Image
+							src="/service2.png"
+							alt="service2"
+							width={1064}
+							height={396}
+						/>
 						<p className="px-8 text-xs font-[400] lg:px-0 lg:text-lg">
 							Realizamos intervención en los procesos para el
 							mejoramiento y eficiencia de los niveles de
@@ -50,7 +61,12 @@ export default function Services() {
 						<span className="w-full text-center text-sm font-bold text-[#08B3CE] lg:text-start lg:text-base">
 							Transformación digital e innovación
 						</span>
-						<img src="/service3.png" alt="service3" />
+						<Image
+							src="/service3.png"
+							alt="service3"
+							width={1064}
+							height={396}
+						/>
 						<p className="px-8 text-xs font-[400] lg:px-0 lg:text-lg">
 							Te acompañamos a aumentar la eficiencia operativa,
 							mejorar la experiencia de cliente, impulsar la toma
@@ -67,7 +83,12 @@ export default function Services() {
 							Reclutamiento especializado para posiciones
 							táctico-estratégicas.
 						</span>
-						<img src="/service4.png" alt="service4" />
+						<Image
+							src="/service4.png"
+							alt="service4"
+							width={1064}
+							height={396}
+						/>
 						<p className="px-8 text-xs font-[400] lg:px-0 lg:text-lg">
 							Proporcionamos soluciones de reclutamiento
 							personalizadas para posiciones tácticas y
@@ -81,7 +102,12 @@ export default function Services() {
 						<span className="w-full text-center text-sm font-bold text-[#08B3CE] lg:text-start lg:text-base">
 							Formación para equipos operativos.
 						</span>
-						<img src="/service5.png" alt="service5" />
+						<Image
+							src="/service5.png"
+							alt="service5"
+							width={1064}
+							height={396}
+						/>
 						<p className="px-8 text-xs font-[400] lg:px-0 lg:text-lg">
 							Desarrollamos planes de formación específicos en las
 							áreas de atención para segmentos B2B y B2C, así como

@@ -1,3 +1,4 @@
+import Image from "next/image";
 export default function About() {
 	return (
 		<>
@@ -28,9 +29,11 @@ export default function About() {
 							para TI.
 						</p>
 					</div>
-					<img
+					<Image
 						src="/avatar-about.png"
 						alt="banner-about"
+						width={441}
+						height={416}
 						className="aspect-square sm:w-1/2"
 					/>
 				</section>
@@ -44,9 +47,11 @@ export default function About() {
 					</p>
 					<div className="flex max-w-[650px] flex-wrap items-center justify-center gap-4">
 						<div className="center-center aspect-square w-[140px] flex-col gap-4 rounded-lg bg-white p-1 shadow-lg shadow-[#08B3CE25] lg:w-[169px]">
-							<img
+							<Image
 								src="/icon1.png"
 								alt="icon1"
+								width={60}
+								height={60}
 								className="aspect-square w-[45%]"
 							/>
 							<span className="text-center text-[11px] font-[600] lg:text-sm">
@@ -54,9 +59,11 @@ export default function About() {
 							</span>
 						</div>
 						<div className="center-center aspect-square w-[140px] flex-col gap-4 rounded-lg bg-white p-1 shadow-lg shadow-[#08B3CE25] lg:w-[169px]">
-							<img
+							<Image
 								src="/icon2.png"
 								alt="icon2"
+								width={60}
+								height={60}
 								className="aspect-square w-[45%]"
 							/>
 							<span className="text-center text-[11px] font-[600] lg:text-sm">
@@ -64,9 +71,11 @@ export default function About() {
 							</span>
 						</div>
 						<div className="center-center aspect-square w-[140px] flex-col gap-4 rounded-lg bg-white p-1 shadow-lg shadow-[#08B3CE25] lg:w-[169px]">
-							<img
+							<Image
 								src="/icon3.png"
 								alt="icon3"
+								width={60}
+								height={60}
 								className="aspect-square w-[45%]"
 							/>
 							<span className="text-center text-[11px] font-[600] lg:text-sm">
@@ -74,9 +83,11 @@ export default function About() {
 							</span>
 						</div>
 						<div className="center-center aspect-square w-[140px] flex-col gap-4 rounded-lg bg-white p-1 shadow-lg shadow-[#08B3CE25] lg:w-[169px]">
-							<img
+							<Image
 								src="/icon4.png"
 								alt="icon4"
+								width={60}
+								height={60}
 								className="aspect-square w-[45%]"
 							/>
 							<span className="text-center text-[11px] font-[600] lg:text-sm">
@@ -84,9 +95,11 @@ export default function About() {
 							</span>
 						</div>
 						<div className="center-center aspect-square w-[140px] flex-col gap-4 rounded-lg bg-white p-1 shadow-lg shadow-[#08B3CE25] lg:w-[169px]">
-							<img
+							<Image
 								src="/icon5.png"
 								alt="icon5"
+								width={60}
+								height={60}
 								className="aspect-square w-[45%]"
 							/>
 							<span className="text-center text-[11px] font-[600] lg:text-sm">

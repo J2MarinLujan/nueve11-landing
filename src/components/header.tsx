@@ -1,12 +1,13 @@
 import ServicesButton from "@/components/buttons/services-button";
 import MenuMobile from "@/components/buttons/menu-mobile";
+import Image from "next/image";
 
 export default function Header() {
 	return (
 		<>
 			<header className="header-blur fixed left-0 right-0 top-0 z-40 flex h-[60px] w-full items-center justify-center bg-gradient-to-t from-transparent to-[#F2F2F2] lg:h-[95px] lg:justify-between lg:px-20">
 				<a href="#home" className="hoveer cursor-pointer">
-					<img src="/logo.png" alt="logo" />
+					<Image src="/logo.png" alt="logo" width={129} height={29} />
 				</a>
 				<nav className="hidden items-center justify-center lg:flex">
 					<ul className="center-center gap-10 text-base font-[500]">

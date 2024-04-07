@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 export default function Home() {
 	return (
 		<>
@@ -5,14 +7,18 @@ export default function Home() {
 				id="home"
 				className="center-center relative h-[475px] w-full lg:mt-[95px] lg:h-[510px]"
 			>
-				<img
+				<Image
 					src="/banner-mobile-home.png"
 					alt="banner-home-mobile"
+					width={428}
+					height={474}
 					className="absolute left-0 right-0 top-0 z-10 h-full w-full object-cover object-center sm:hidden"
 				/>
-				<img
+				<Image
 					src="/banner-home.png"
-					alt="banner-mobile"
+					alt="banner-home"
+					width={1280}
+					height={511}
 					className="absolute left-0 right-0 top-0 z-10 hidden h-full w-full object-cover object-center sm:flex"
 				/>
 				<div className="center-center z-20 h-full w-full">

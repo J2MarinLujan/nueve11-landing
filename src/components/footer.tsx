@@ -1,9 +1,10 @@
+import Image from "next/image";
 export default function Footer() {
 	return (
 		<>
 			<footer className="border-gradient relative flex w-full flex-col items-center justify-center gap-4 bg-gradient-to-b from-[#08B3CE50] to-transparent px-8 pb-20 pt-5 lg:h-[164px] lg:flex-row lg:items-start lg:justify-between lg:px-20">
 				<a href="#home" className="hoveer cursor-pointer">
-					<img src="/logo.png" alt="logo" />
+					<Image src="/logo.png" alt="logo" width={129} height={29} />
 				</a>
 				<div className="center-center flex-col gap-2">
 					<span className="text-xs font-light lg:text-sm">
@@ -15,10 +16,12 @@ export default function Footer() {
 							target="_blank"
 							rel="noopener noreferrer"
 						>
-							<img
+							<Image
 								src="/instagram.png"
 								alt="instagram"
 								className="hoveer"
+								width={39}
+								height={39}
 							/>
 						</a>
 						<a
@@ -26,10 +29,12 @@ export default function Footer() {
 							target="_blank"
 							rel="noopener noreferrer"
 						>
-							<img
+							<Image
 								src="/facebook.png"
 								alt="facebook"
 								className="hoveer"
+								width={39}
+								height={39}
 							/>
 						</a>
 						<a
@@ -37,10 +42,12 @@ export default function Footer() {
 							target="_blank"
 							rel="noopener noreferrer"
 						>
-							<img
+							<Image
 								src="/linkeding.png"
 								alt="linkedin"
 								className="hoveer"
+								width={39}
+								height={39}
 							/>
 						</a>
 					</div>

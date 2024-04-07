@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
+import Image from "next/image";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -25,9 +26,11 @@ export default function RootLayout({
 					target="_blank"
 					className="fixed bottom-2 right-2 z-30 aspect-square w-[50px] hover:scale-110 sm:bottom-4 sm:right-4 sm:w-[69px]"
 				>
-					<img
+					<Image
 						src="/whatsapp.png"
 						alt="logo"
+						width={69}
+						height={69}
 						className="h-full w-full object-cover object-center"
 					/>
 				</a>
