@@ -12,7 +12,7 @@ export default function Contact() {
 					<motion.div
 						className="flex w-full max-w-[470px] flex-col items-start justify-center gap-4"
 						initial={{ opacity: 0, x: -200 }}
-						whileInView={{
+						animate={{
 							opacity: 1,
 							x: 0,
 							transition: { duration: 0.5 },

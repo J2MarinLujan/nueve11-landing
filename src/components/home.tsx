@@ -9,7 +9,7 @@ export default function Home() {
 				id="home"
 				className="center-center relative h-[475px] w-full lg:mt-[95px] lg:h-[510px]"
 				initial={{ opacity: 0 }}
-				whileInView={{ opacity: 1, transition: { duration: 1 } }}
+				animate={{ opacity: 1, transition: { duration: 1 } }}
 			>
 				<div className="absolute left-0 right-0 top-0 z-10 h-full w-full">
 					<div className="absolute left-0 right-0 top-0 h-40 bg-opacity-90 bg-gradient-to-b from-[#F2F2F2] to-transparent"></div>

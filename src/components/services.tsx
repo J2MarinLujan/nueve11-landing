@@ -13,7 +13,7 @@ export default function Services() {
 						id="service1"
 						className="flex w-full max-w-[1064px] flex-col items-start justify-center gap-4"
 						initial={{ opacity: 0, x: 200 }}
-						whileInView={{
+						animate={{
 							opacity: 1,
 							x: 0,
 							transition: { duration: 0.5 },
@@ -38,7 +38,7 @@ export default function Services() {
 						id="service2"
 						className="flex w-full max-w-[1064px] flex-col items-start justify-center gap-4"
 						initial={{ opacity: 0, x: -200 }}
-						whileInView={{
+						animate={{
 							opacity: 1,
 							x: 0,
 							transition: { duration: 0.5 },
@@ -72,7 +72,7 @@ export default function Services() {
 						id="service3"
 						className="flex w-full max-w-[1064px] flex-col items-start justify-center gap-4"
 						initial={{ opacity: 0, x: 200 }}
-						whileInView={{
+						animate={{
 							opacity: 1,
 							x: 0,
 							transition: { duration: 0.5 },
@@ -99,7 +99,7 @@ export default function Services() {
 						id="service4"
 						className="flex w-full max-w-[1064px] flex-col items-start justify-center gap-4"
 						initial={{ opacity: 0, x: -200 }}
-						whileInView={{
+						animate={{
 							opacity: 1,
 							x: 0,
 							transition: { duration: 0.5 },
@@ -125,7 +125,7 @@ export default function Services() {
 						id="service5"
 						className="flex w-full max-w-[1064px] flex-col items-start justify-center gap-4"
 						initial={{ opacity: 0, x: 200 }}
-						whileInView={{
+						animate={{
 							opacity: 1,
 							x: 0,
 							transition: { duration: 0.5 },

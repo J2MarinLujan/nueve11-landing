@@ -9,7 +9,7 @@ export default function Footer() {
 				<motion.div
 					className="mx-auto flex w-full max-w-7xl flex-col items-center justify-center gap-4 px-8 pb-20 pt-5 lg:h-[164px] lg:flex-row lg:items-start lg:justify-between lg:px-20"
 					initial={{ opacity: 0, y: 200 }}
-					whileInView={{
+					animate={{
 						opacity: 1,
 						y: 0,
 						transition: {

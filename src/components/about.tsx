@@ -8,7 +8,7 @@ export default function About() {
 				id="about"
 				className="center-center relative w-full flex-col gap-20 px-8 py-10 lg:gap-20 lg:px-20 lg:py-20"
 				initial={{ opacity: 0 }}
-				whileInView={{ opacity: 1 }}
+				animate={{ opacity: 1 }}
 			>
 				<Image
 					src="/texture-background.webp"
@@ -20,7 +20,7 @@ export default function About() {
 				<motion.section
 					className="center-center z-20 w-full max-w-[1064px] flex-col gap-1 md:flex-row lg:gap-20 lg:p-20"
 					initial={{ opacity: 0, y: 20 }}
-					whileInView={{
+					animate={{
 						opacity: 1,
 						y: 0,
 						transition: { duration: 0.5 },
@@ -59,7 +59,7 @@ export default function About() {
 				<motion.section
 					className="center-center z-20 max-w-[1064px] flex-col gap-4"
 					initial={{ opacity: 0, y: 20 }}
-					whileInView={{
+					animate={{
 						opacity: 1,
 						y: 0,
 						transition: { delay: 0.5, duration: 0.5 },
@@ -76,7 +76,7 @@ export default function About() {
 						<motion.div
 							className="center-center aspect-square w-[140px] flex-col gap-4 rounded-lg bg-white p-1 shadow-lg shadow-[#08B3CE25] lg:w-[169px] lg:p-2"
 							initial={{ opacity: 0, y: 20 }}
-							whileInView={{
+							animate={{
 								opacity: 1,
 								y: 0,
 								transition: { duration: 0.5 },
@@ -96,7 +96,7 @@ export default function About() {
 						<motion.div
 							className="center-center aspect-square w-[140px] flex-col gap-4 rounded-lg bg-white p-1 shadow-lg shadow-[#08B3CE25] lg:w-[169px] lg:p-2"
 							initial={{ opacity: 0, y: 20 }}
-							whileInView={{
+							animate={{
 								opacity: 1,
 								y: 0,
 								transition: { delay: 0.2, duration: 0.5 },
@@ -116,7 +116,7 @@ export default function About() {
 						<motion.div
 							className="center-center aspect-square w-[140px] flex-col gap-4 rounded-lg bg-white p-1 shadow-lg shadow-[#08B3CE25] lg:w-[169px] lg:p-2"
 							initial={{ opacity: 0, y: 20 }}
-							whileInView={{
+							animate={{
 								opacity: 1,
 								y: 0,
 								transition: { delay: 0.4, duration: 0.5 },
@@ -136,7 +136,7 @@ export default function About() {
 						<motion.div
 							className="center-center aspect-square w-[140px] flex-col gap-4 rounded-lg bg-white p-1 shadow-lg shadow-[#08B3CE25] lg:w-[169px] lg:p-2"
 							initial={{ opacity: 0, y: 20 }}
-							whileInView={{
+							animate={{
 								opacity: 1,
 								y: 0,
 								transition: { delay: 0.6, duration: 0.5 },
@@ -156,7 +156,7 @@ export default function About() {
 						<motion.div
 							className="center-center aspect-square w-[140px] flex-col gap-4 rounded-lg bg-white p-1 shadow-lg shadow-[#08B3CE25] lg:w-[169px] lg:p-2"
 							initial={{ opacity: 0, y: 20 }}
-							whileInView={{
+							animate={{
 								opacity: 1,
 								y: 0,
 								transition: { delay: 0.8, duration: 0.5 },

@@ -13,7 +13,7 @@ export default function Header() {
 						href="#home"
 						className="hoveer cursor-pointer"
 						initial={{ opacity: 0, x: -200 }}
-						whileInView={{
+						animate={{
 							opacity: 1,
 							x: 0,
 							transition: {
@@ -27,7 +27,7 @@ export default function Header() {
 						<motion.ul className="center-center gap-10 text-base font-[500]">
 							<motion.li
 								initial={{ opacity: 0, x: 200 }}
-								whileInView={{
+								animate={{
 									opacity: 1,
 									x: 0,
 									transition: {
@@ -45,7 +45,7 @@ export default function Header() {
 							</motion.li>
 							<motion.li
 								initial={{ opacity: 0, x: 200 }}
-								whileInView={{
+								animate={{
 									opacity: 1,
 									x: 0,
 									transition: {
@@ -63,7 +63,7 @@ export default function Header() {
 							</motion.li>
 							<motion.li
 								initial={{ opacity: 0, x: 200 }}
-								whileInView={{
+								animate={{
 									opacity: 1,
 									x: 0,
 									transition: {
@@ -76,7 +76,7 @@ export default function Header() {
 							</motion.li>
 							<motion.li
 								initial={{ opacity: 0, x: 200 }}
-								whileInView={{
+								animate={{
 									opacity: 1,
 									x: 0,
 									transition: {
