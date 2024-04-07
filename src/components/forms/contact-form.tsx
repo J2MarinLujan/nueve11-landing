@@ -10,6 +10,7 @@ import {
 	FormLabel,
 	FormMessage,
 } from "@/components/ui/form";
+import { motion } from "framer-motion";
 import Swal from "sweetalert2";
 
 const formSchema = z.object({
@@ -66,7 +67,14 @@ export default function ContactForm() {
 		}
 	}
 	return (
-		<>
+		<motion.div
+			initial={{ opacity: 0, x: 200 }}
+			whileInView={{
+				opacity: 1,
+				x: 0,
+				transition: { duration: 0.5 },
+			}}
+		>
 			<Form {...form}>
 				<form
 					onSubmit={form.handleSubmit(onSubmit)}
@@ -184,6 +192,6 @@ export default function ContactForm() {
 					</button>
 				</form>
 			</Form>
-		</>
+		</motion.div>
 	);
 }

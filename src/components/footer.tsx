@@ -1,11 +1,22 @@
-import Image from "next/image";
+"use client";
 import { Icons } from "@/components/icons";
+import { motion } from "framer-motion";
 import CopyEmailButton from "@/components/buttons/copy-email-button";
 export default function Footer() {
 	return (
 		<>
 			<footer className="border-gradient relative bg-gradient-to-b from-[#08B3CE50] to-transparent">
-				<div className="mx-auto flex w-full max-w-7xl flex-col items-center justify-center gap-4 px-8 pb-20 pt-5 lg:h-[164px] lg:flex-row lg:items-start lg:justify-between lg:px-20">
+				<motion.div
+					className="mx-auto flex w-full max-w-7xl flex-col items-center justify-center gap-4 px-8 pb-20 pt-5 lg:h-[164px] lg:flex-row lg:items-start lg:justify-between lg:px-20"
+					initial={{ opacity: 0, y: 200 }}
+					whileInView={{
+						opacity: 1,
+						y: 0,
+						transition: {
+							duration: 0.5,
+						},
+					}}
+				>
 					<a href="#home" className="hoveer cursor-pointer">
 						<Icons.logo />
 					</a>
@@ -41,7 +52,7 @@ export default function Footer() {
 						</div>
 					</div>
 					<CopyEmailButton />
-				</div>
+				</motion.div>
 			</footer>
 		</>
 	);

@@ -1,3 +1,5 @@
+"use client";
+import { motion } from "framer-motion";
 import Image from "next/image";
 export default function Services() {
 	return (
@@ -7,9 +9,15 @@ export default function Services() {
 					Nuestros servicios
 				</h3>
 				<div className="center-center w-full flex-col gap-14">
-					<section
+					<motion.section
 						id="service1"
 						className="flex w-full max-w-[1064px] flex-col items-start justify-center gap-4"
+						initial={{ opacity: 0, x: 200 }}
+						whileInView={{
+							opacity: 1,
+							x: 0,
+							transition: { duration: 0.5 },
+						}}
 					>
 						<span className="w-full text-center text-sm font-bold text-[#08B3CE] lg:text-start lg:text-base">
 							Estrategia y desarrollo de negocios
@@ -25,10 +33,16 @@ export default function Services() {
 							la estrategia correcta, para lograr una mayor
 							rentabilidad.
 						</p>
-					</section>
-					<section
+					</motion.section>
+					<motion.section
 						id="service2"
 						className="flex w-full max-w-[1064px] flex-col items-start justify-center gap-4"
+						initial={{ opacity: 0, x: -200 }}
+						whileInView={{
+							opacity: 1,
+							x: 0,
+							transition: { duration: 0.5 },
+						}}
 					>
 						<span className="w-full text-center text-sm font-bold text-[#08B3CE] lg:text-start lg:text-base">
 							Mejoramiento de procesos
@@ -53,10 +67,16 @@ export default function Services() {
 							Diseñamos e implementamos flujos BPMN, RPA, RDA,
 							analítica aplicada e inteligencia artificial.{" "}
 						</p>
-					</section>
-					<section
+					</motion.section>
+					<motion.section
 						id="service3"
 						className="flex w-full max-w-[1064px] flex-col items-start justify-center gap-4"
+						initial={{ opacity: 0, x: 200 }}
+						whileInView={{
+							opacity: 1,
+							x: 0,
+							transition: { duration: 0.5 },
+						}}
 					>
 						<span className="w-full text-center text-sm font-bold text-[#08B3CE] lg:text-start lg:text-base">
 							Transformación digital e innovación
@@ -74,10 +94,16 @@ export default function Services() {
 							adaptación a los cambios del mercado y fomentar la
 							competitividad a largo plazo.
 						</p>
-					</section>
-					<section
+					</motion.section>
+					<motion.section
 						id="service4"
 						className="flex w-full max-w-[1064px] flex-col items-start justify-center gap-4"
+						initial={{ opacity: 0, x: -200 }}
+						whileInView={{
+							opacity: 1,
+							x: 0,
+							transition: { duration: 0.5 },
+						}}
 					>
 						<span className="w-full text-center text-sm font-bold text-[#08B3CE] lg:text-start lg:text-base">
 							Reclutamiento especializado para posiciones
@@ -94,10 +120,16 @@ export default function Services() {
 							personalizadas para posiciones tácticas y
 							estratégicas.
 						</p>
-					</section>
-					<section
+					</motion.section>
+					<motion.section
 						id="service5"
 						className="flex w-full max-w-[1064px] flex-col items-start justify-center gap-4"
+						initial={{ opacity: 0, x: 200 }}
+						whileInView={{
+							opacity: 1,
+							x: 0,
+							transition: { duration: 0.5 },
+						}}
 					>
 						<span className="w-full text-center text-sm font-bold text-[#08B3CE] lg:text-start lg:text-base">
 							Formación para equipos operativos.
@@ -114,7 +146,7 @@ export default function Services() {
 							documentación técnica de instructivos y
 							procedimientos.
 						</p>
-					</section>
+					</motion.section>
 				</div>
 			</div>
 		</>

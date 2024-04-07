@@ -3,7 +3,6 @@ import { Inter, Poppins } from "next/font/google";
 import "./globals.css";
 import { Icons } from "@/components/icons";
 
-const inter = Inter({ subsets: ["latin"] });
 const poppins = Poppins({
 	subsets: ["latin"],
 	display: "swap",
@@ -28,7 +27,7 @@ export default function RootLayout({
 			>
 				{children}
 				<a
-					href="https://wa.me/573207338282"
+					href={"https://wa.me/" + process.env.WHATSAPP_NUMBER}
 					target="_blank"
 					className="center-center fixed bottom-2 right-2 z-30 aspect-square w-[69px] rounded-full border-4 border-white bg-[#08B3CE] text-white shadow-lg transition-all duration-300 ease-in-out hover:scale-110 hover:shadow-xl sm:bottom-4 sm:right-4"
 				>

@@ -1,19 +1,31 @@
+"use client";
 import Image from "next/image";
+import { motion } from "framer-motion";
 export default function About() {
 	return (
 		<>
-			<div
+			<motion.div
 				id="about"
 				className="center-center relative w-full flex-col gap-20 px-8 py-10 lg:gap-20 lg:px-20 lg:py-20"
+				initial={{ opacity: 0 }}
+				whileInView={{ opacity: 1 }}
 			>
 				<Image
 					src="/texture-background.webp"
 					alt=""
 					width={1280}
 					height={646}
-					className="absolute bottom-0 left-0 right-0 z-10 h-full max-h-[700px] w-full object-cover object-bottom md:object-fill"
+					className="animate-scale absolute bottom-0 left-0 right-0 z-10 h-full max-h-[700px] w-full object-cover object-bottom md:object-fill"
 				/>
-				<section className="center-center z-20 w-full max-w-[1064px] flex-col gap-1 md:flex-row lg:gap-20 lg:p-20">
+				<motion.section
+					className="center-center z-20 w-full max-w-[1064px] flex-col gap-1 md:flex-row lg:gap-20 lg:p-20"
+					initial={{ opacity: 0, y: 20 }}
+					whileInView={{
+						opacity: 1,
+						y: 0,
+						transition: { duration: 0.5 },
+					}}
+				>
 					<div className="flex w-full max-w-[420px] flex-col items-center justify-center gap-4 md:items-start">
 						<h3 className="mb-2 text-2xl font-[600] md:text-3xl">
 							¿Quiénes somos?
@@ -41,10 +53,18 @@ export default function About() {
 						alt="banner-about"
 						width={441}
 						height={416}
-						className="aspect-square sm:w-1/2"
+						className="animate-scale aspect-square sm:w-1/2"
 					/>
-				</section>
-				<section className="center-center z-20 max-w-[1064px] flex-col gap-4">
+				</motion.section>
+				<motion.section
+					className="center-center z-20 max-w-[1064px] flex-col gap-4"
+					initial={{ opacity: 0, y: 20 }}
+					whileInView={{
+						opacity: 1,
+						y: 0,
+						transition: { delay: 0.5, duration: 0.5 },
+					}}
+				>
 					<h3 className="text-2xl font-[600] lg:text-3xl">
 						¿Por qué y para qué?
 					</h3>
@@ -53,7 +73,15 @@ export default function About() {
 						de los procesos internos, permitiendo:
 					</p>
 					<div className="flex max-w-[650px] flex-wrap items-center justify-center gap-4">
-						<div className="center-center aspect-square w-[140px] flex-col gap-4 rounded-lg bg-white p-1 shadow-lg shadow-[#08B3CE25] lg:w-[169px] lg:p-2">
+						<motion.div
+							className="center-center aspect-square w-[140px] flex-col gap-4 rounded-lg bg-white p-1 shadow-lg shadow-[#08B3CE25] lg:w-[169px] lg:p-2"
+							initial={{ opacity: 0, y: 20 }}
+							whileInView={{
+								opacity: 1,
+								y: 0,
+								transition: { duration: 0.5 },
+							}}
+						>
 							<Image
 								src="/icon1.webp"
 								alt="icon1"
@@ -64,8 +92,16 @@ export default function About() {
 							<span className="text-center text-[11px] font-[600] lg:h-[60px] lg:text-sm">
 								Minimizar costos
 							</span>
-						</div>
-						<div className="center-center aspect-square w-[140px] flex-col gap-4 rounded-lg bg-white p-1 shadow-lg shadow-[#08B3CE25] lg:w-[169px] lg:p-2">
+						</motion.div>
+						<motion.div
+							className="center-center aspect-square w-[140px] flex-col gap-4 rounded-lg bg-white p-1 shadow-lg shadow-[#08B3CE25] lg:w-[169px] lg:p-2"
+							initial={{ opacity: 0, y: 20 }}
+							whileInView={{
+								opacity: 1,
+								y: 0,
+								transition: { delay: 0.2, duration: 0.5 },
+							}}
+						>
 							<Image
 								src="/icon2.webp"
 								alt="icon2"
@@ -76,8 +112,16 @@ export default function About() {
 							<span className="text-center text-[11px] font-[600] lg:h-[60px] lg:text-sm">
 								Disminuir el riesgo operativo y económico
 							</span>
-						</div>
-						<div className="center-center aspect-square w-[140px] flex-col gap-4 rounded-lg bg-white p-1 shadow-lg shadow-[#08B3CE25] lg:w-[169px] lg:p-2">
+						</motion.div>
+						<motion.div
+							className="center-center aspect-square w-[140px] flex-col gap-4 rounded-lg bg-white p-1 shadow-lg shadow-[#08B3CE25] lg:w-[169px] lg:p-2"
+							initial={{ opacity: 0, y: 20 }}
+							whileInView={{
+								opacity: 1,
+								y: 0,
+								transition: { delay: 0.4, duration: 0.5 },
+							}}
+						>
 							<Image
 								src="/icon3.webp"
 								alt="icon3"
@@ -88,8 +132,16 @@ export default function About() {
 							<span className="text-center text-[11px] font-[600] lg:h-[60px] lg:text-sm">
 								Disminuir errores humanos
 							</span>
-						</div>
-						<div className="center-center aspect-square w-[140px] flex-col gap-4 rounded-lg bg-white p-1 shadow-lg shadow-[#08B3CE25] lg:w-[169px] lg:p-2">
+						</motion.div>
+						<motion.div
+							className="center-center aspect-square w-[140px] flex-col gap-4 rounded-lg bg-white p-1 shadow-lg shadow-[#08B3CE25] lg:w-[169px] lg:p-2"
+							initial={{ opacity: 0, y: 20 }}
+							whileInView={{
+								opacity: 1,
+								y: 0,
+								transition: { delay: 0.6, duration: 0.5 },
+							}}
+						>
 							<Image
 								src="/icon4.webp"
 								alt="icon4"
@@ -100,8 +152,16 @@ export default function About() {
 							<span className="text-center text-[11px] font-[600] lg:h-[60px] lg:text-sm">
 								Maximizar la eficiencia
 							</span>
-						</div>
-						<div className="center-center aspect-square w-[140px] flex-col gap-4 rounded-lg bg-white p-1 shadow-lg shadow-[#08B3CE25] lg:w-[169px] lg:p-2">
+						</motion.div>
+						<motion.div
+							className="center-center aspect-square w-[140px] flex-col gap-4 rounded-lg bg-white p-1 shadow-lg shadow-[#08B3CE25] lg:w-[169px] lg:p-2"
+							initial={{ opacity: 0, y: 20 }}
+							whileInView={{
+								opacity: 1,
+								y: 0,
+								transition: { delay: 0.8, duration: 0.5 },
+							}}
+						>
 							<Image
 								src="/icon5.webp"
 								alt="icon5"
@@ -112,10 +172,10 @@ export default function About() {
 							<span className="text-center text-[11px] font-[600] lg:h-[60px] lg:text-sm">
 								Mejorar la experiencia del cliente
 							</span>
-						</div>
+						</motion.div>
 					</div>
-				</section>
-			</div>
+				</motion.section>
+			</motion.div>
 		</>
 	);
 }

@@ -1,6 +1,7 @@
 "use client";
 import { useState } from "react";
 import { Icons } from "@/components/icons";
+import { motion } from "framer-motion";
 
 export default function MenuMobile() {
 	const [menuMobile, setMenuMobile] = useState(false);
@@ -9,12 +10,20 @@ export default function MenuMobile() {
 		<>
 			<aside className="fixed right-2 top-2 sm:right-4 lg:hidden">
 				{!menuMobile && (
-					<button
+					<motion.button
 						onClick={() => setMenuMobile(true)}
 						className="center-center hoveer aspect-square w-[45px] cursor-pointer rounded-full bg-[#08B3CE]"
+						initial={{ opacity: 0, x: 200 }}
+						animate={{
+							opacity: 1,
+							x: 0,
+							transition: {
+								duration: 0.5,
+							},
+						}}
 					>
 						<Icons.menu_mobile />
-					</button>
+					</motion.button>
 				)}
 				<div
 					className="menu-blur fixed right-0 top-0 z-50 h-screen w-screen bg-[#08B3CE] bg-opacity-95 p-3 transition-transform duration-500 ease-in-out sm:w-[50vw]"

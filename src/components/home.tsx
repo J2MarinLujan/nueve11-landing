@@ -1,11 +1,15 @@
+"use client";
 import Image from "next/image";
+import { motion } from "framer-motion";
 
 export default function Home() {
 	return (
 		<>
-			<section
+			<motion.section
 				id="home"
 				className="center-center relative h-[475px] w-full lg:mt-[95px] lg:h-[510px]"
+				initial={{ opacity: 0 }}
+				whileInView={{ opacity: 1, transition: { duration: 1 } }}
 			>
 				<div className="absolute left-0 right-0 top-0 z-10 h-full w-full">
 					<div className="absolute left-0 right-0 top-0 h-40 bg-opacity-90 bg-gradient-to-b from-[#F2F2F2] to-transparent"></div>
@@ -31,7 +35,7 @@ export default function Home() {
 						consultoría 360° y modular
 					</h3>
 				</div>
-			</section>
+			</motion.section>
 		</>
 	);
 }
