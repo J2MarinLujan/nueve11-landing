@@ -15,7 +15,7 @@ export default function Services() {
 							Estrategia y desarrollo de negocios
 						</span>
 						<Image
-							src="/service1.png"
+							src="/service1.webp"
 							alt="service1"
 							width={1064}
 							height={396}
@@ -34,7 +34,7 @@ export default function Services() {
 							Mejoramiento de procesos
 						</span>
 						<Image
-							src="/service2.png"
+							src="/service2.webp"
 							alt="service2"
 							width={1064}
 							height={396}
@@ -62,7 +62,7 @@ export default function Services() {
 							Transformación digital e innovación
 						</span>
 						<Image
-							src="/service3.png"
+							src="/service3.webp"
 							alt="service3"
 							width={1064}
 							height={396}
@@ -84,7 +84,7 @@ export default function Services() {
 							táctico-estratégicas.
 						</span>
 						<Image
-							src="/service4.png"
+							src="/service4.webp"
 							alt="service4"
 							width={1064}
 							height={396}
@@ -103,7 +103,7 @@ export default function Services() {
 							Formación para equipos operativos.
 						</span>
 						<Image
-							src="/service5.png"
+							src="/service5.webp"
 							alt="service5"
 							width={1064}
 							height={396}
