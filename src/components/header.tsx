@@ -1,13 +1,14 @@
 import ServicesButton from "@/components/buttons/services-button";
+import MenuMobile from "@/components/buttons/menu-mobile";
 
 export default function Header() {
 	return (
 		<>
-			<header className="between-center fixed left-0 right-0 top-0 z-50 h-[95px] w-full bg-gradient-to-t from-transparent to-[#F2F2F2] px-20">
-				<button className="hoveer cursor-pointer">
+			<header className="header-blur fixed left-0 right-0 top-0 z-40 flex h-[60px] w-full items-center justify-center bg-gradient-to-t from-transparent to-[#F2F2F2] lg:h-[95px] lg:justify-between lg:px-20">
+				<a href="#home" className="hoveer cursor-pointer">
 					<img src="/logo.png" alt="logo" />
-				</button>
-				<nav className="center-center">
+				</a>
+				<nav className="hidden items-center justify-center lg:flex">
 					<ul className="center-center gap-10 text-base font-[500]">
 						<li>
 							<a
@@ -38,6 +39,7 @@ export default function Header() {
 						</li>
 					</ul>
 				</nav>
+				<MenuMobile />
 			</header>
 		</>
 	);

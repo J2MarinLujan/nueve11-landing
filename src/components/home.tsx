@@ -3,15 +3,20 @@ export default function Home() {
 		<>
 			<section
 				id="home"
-				className="center-center relative mt-[95px] w-full"
+				className="center-center relative h-[475px] w-full lg:mt-[95px] lg:h-[510px]"
 			>
 				<img
-					src="/banner-home.png"
-					alt="banner-home"
-					className="w-full object-cover object-center"
+					src="/banner-mobile-home.png"
+					alt="banner-home-mobile"
+					className="absolute left-0 right-0 top-0 z-10 h-full w-full object-cover object-center sm:hidden"
 				/>
-				<div className="center-center absolute bottom-0 left-0 right-0 top-0 z-20 mx-auto h-full w-full max-w-[1088px]">
-					<h3 className="title-home text-center text-5xl font-[600] leading-[60px] text-white shadow-black drop-shadow-lg">
+				<img
+					src="/banner-home.png"
+					alt="banner-mobile"
+					className="absolute left-0 right-0 top-0 z-10 hidden h-full w-full object-cover object-center sm:flex"
+				/>
+				<div className="center-center z-20 h-full w-full">
+					<h3 className="title-home max-w-[65%] text-center text-2xl font-[600] text-white shadow-black  drop-shadow-lg sm:max-w-[90%] lg:text-5xl lg:leading-[60px]">
 						Acompañamos a nuestros clientes a través de servicios de
 						consultoría 360° y modular
 					</h3>

@@ -16,11 +16,21 @@ export default function RootLayout({
 }>) {
 	return (
 		<html lang="en">
-			<body className={`${inter.className} h-full w-screen antialiased`}>
+			<body
+				className={`${inter.className} h-full min-h-screen w-screen antialiased`}
+			>
 				{children}
-				<button className="fixed bottom-4 right-4 hover:scale-110">
-					<img src="/whatsapp.png" alt="logo" />
-				</button>
+				<a
+					href="https://wa.me/573207338282"
+					target="_blank"
+					className="fixed bottom-2 right-2 z-30 aspect-square w-[50px] hover:scale-110 sm:bottom-4 sm:right-4 sm:w-[69px]"
+				>
+					<img
+						src="/whatsapp.png"
+						alt="logo"
+						className="h-full w-full object-cover object-center"
+					/>
+				</a>
 			</body>
 		</html>
 	);

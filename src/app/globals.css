@@ -44,7 +44,16 @@
 	}
 }
 
+*,
+*:before,
+*:after {
+	box-sizing: border-box;
+}
+
 html {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
 	scroll-snap-type: y mandatory;
 	scroll-behavior: smooth;
 }
@@ -81,4 +90,9 @@ body {
 	height: 200px;
 	background-color: #000;
 	clip-path: polygon(0 0, 100% 0, 100% 80%, 50% 100%, 0 80%);
+}
+
+.header-blur {
+	background: linear-gradient(#f2f2f2, transparent);
+	backdrop-filter: blur(2px);
 }
