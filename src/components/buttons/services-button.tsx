@@ -12,11 +12,13 @@ export default function ServicesButton() {
 					className="flex items-center justify-center gap-1 hover:fill-amber-100 hover:text-[#08B3CE] hover:underline"
 				>
 					Nuestros servicios
-					<Icons.arrow_down className={
-						isMenuOpen
-							? "rotate-180 transform"
-							: "stroke-[#08B3CE]"
-					} />
+					<Icons.arrow_down
+						className={
+							isMenuOpen
+								? "rotate-180 transform"
+								: "stroke-[#08B3CE]"
+						}
+					/>
 				</button>
 
 				<div

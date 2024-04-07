@@ -1,5 +1,6 @@
 import Image from "next/image";
 import { Icons } from "@/components/icons";
+import CopyEmailButton from "@/components/buttons/copy-email-button";
 export default function Footer() {
 	return (
 		<>
@@ -39,9 +40,7 @@ export default function Footer() {
 							</a>
 						</div>
 					</div>
-					<span className="hoveer cursor-pointer text-sm font-[400] underline hover:scale-105 hover:text-[#08B3CE]">
-						contacto@nueve11.co
-					</span>
+					<CopyEmailButton />
 				</div>
 			</footer>
 		</>

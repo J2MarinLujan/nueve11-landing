@@ -11,7 +11,7 @@ export default function About() {
 					alt=""
 					width={1280}
 					height={646}
-					className="absolute bottom-0 left-0 right-0 z-10 h-full max-h-[700px] w-full object-cover md:object-fill object-bottom"
+					className="absolute bottom-0 left-0 right-0 z-10 h-full max-h-[700px] w-full object-cover object-bottom md:object-fill"
 				/>
 				<section className="center-center z-20 w-full max-w-[1064px] flex-col gap-1 md:flex-row lg:gap-20 lg:p-20">
 					<div className="flex w-full max-w-[420px] flex-col items-center justify-center gap-4 md:items-start">

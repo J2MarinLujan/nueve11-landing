@@ -30,7 +30,7 @@ export default function RootLayout({
 				<a
 					href="https://wa.me/573207338282"
 					target="_blank"
-					className="center-center fixed bottom-2 right-2 z-30 aspect-square w-[50px] rounded-full border-4 border-white bg-[#08B3CE] text-white shadow-lg transition-all duration-300 ease-in-out hover:scale-110 hover:shadow-xl sm:bottom-4 sm:right-4 sm:w-[69px]"
+					className="center-center fixed bottom-2 right-2 z-30 aspect-square w-[69px] rounded-full border-4 border-white bg-[#08B3CE] text-white shadow-lg transition-all duration-300 ease-in-out hover:scale-110 hover:shadow-xl sm:bottom-4 sm:right-4"
 				>
 					<Icons.whatsapp />
 				</a>
