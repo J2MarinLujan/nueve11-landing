@@ -10,6 +10,7 @@ import {
 	FormLabel,
 	FormMessage,
 } from "@/components/ui/form";
+import Swal from "sweetalert2";
 
 const formSchema = z.object({
 	name: z
@@ -49,7 +50,20 @@ export default function ContactForm() {
 			body: JSON.stringify(values),
 		});
 		const data = await resp.json();
-		console.log(data);
+		if (data.error === null) {
+			Swal.fire({
+				title: "Mensaje enviado",
+				text: "Gracias por contactarnos, te responderemos lo más pronto posible",
+				icon: "success",
+			});
+			form.reset();
+		} else {
+			Swal.fire({
+				title: "Error",
+				text: "Hubo un error al enviar el mensaje, inténtalo de nuevo",
+				icon: "error",
+			});
+		}
 	}
 	return (
 		<>

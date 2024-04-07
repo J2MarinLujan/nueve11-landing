@@ -6,7 +6,6 @@ export default function CopyEmailButton() {
 	const copyToClipboard = (email: string) => {
 		navigator.clipboard.writeText(email).then(
 			function () {
-				// console.log("Async: Copying to clipboard was successful!");
 				setIsCopied(true);
 				setTimeout(() => {
 					setIsCopied(false);
