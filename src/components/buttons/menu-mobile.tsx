@@ -7,7 +7,7 @@ export default function MenuMobile() {
 	const [showServices, setShowServices] = useState(false);
 	return (
 		<>
-			<div className="fixed right-2 top-2 sm:right-4 lg:hidden">
+			<aside className="fixed right-2 top-2 sm:right-4 lg:hidden">
 				{!menuMobile && (
 					<button
 						onClick={() => setMenuMobile(true)}
@@ -17,7 +17,7 @@ export default function MenuMobile() {
 					</button>
 				)}
 				<div
-					className="fixed right-0 top-0 z-50 h-screen w-screen bg-[#08B3CE] p-3 transition-transform duration-500 ease-in-out sm:w-[50vw]"
+					className="fixed right-0 top-0 z-50 h-screen w-screen bg-[#08B3CE] p-3 transition-transform duration-500 bg-opacity-95 menu-blur ease-in-out sm:w-[50vw]"
 					style={{
 						transform: `translateX(${menuMobile ? "0" : "150%"} )`,
 					}}
@@ -65,6 +65,11 @@ export default function MenuMobile() {
 								>
 									<Icons.services />
 									<span>Servicios</span>
+									<Icons.arrow_down className={
+										showServices
+											? "rotate-180 transform"
+											: "stroke-[#08B3CE]"
+									} />
 								</a>
 								<div
 									className="h-full w-full transition-all duration-500 ease-in-out"
@@ -210,7 +215,7 @@ export default function MenuMobile() {
 						</ul>
 					</nav>
 				</div>
-			</div>
+			</aside>
 		</>
 	);
 }

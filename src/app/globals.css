@@ -54,7 +54,7 @@ html {
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
-	scroll-snap-type: y mandatory;
+	/*scroll-snap-type: y mandatory;*/
 	scroll-behavior: smooth;
 }
 
@@ -67,14 +67,14 @@ body {
 	background-color: #f2f2f2;
 }
 
-.border-gradient::before {
+.border-gradient::after {
 	content: "";
 	position: absolute;
 	top: 0;
 	left: 0;
 	right: 0;
 	height: 2px;
-	background: linear-gradient(to right, white, #08b3ce, white);
+	background: linear-gradient(to right, #f2f2f2, #08b3ce, #f2f2f2);
 }
 
 .title-home {
@@ -95,4 +95,8 @@ body {
 .header-blur {
 	background: linear-gradient(#f2f2f2, transparent);
 	backdrop-filter: blur(2px);
+}
+
+.menu-blur {
+	backdrop-filter: blur(10px) !important;
 }

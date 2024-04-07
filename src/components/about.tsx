@@ -4,9 +4,16 @@ export default function About() {
 		<>
 			<div
 				id="about"
-				className="center-center w-full flex-col gap-20 rounded-b-[50%] bg-gradient-to-t from-[#08B3CE25] via-transparent to-transparent px-8 py-10 lg:gap-20 lg:rounded-b-[30%] lg:px-20 lg:py-20"
+				className="center-center relative w-full flex-col gap-20 px-8 py-10 lg:gap-20 lg:px-20 lg:py-20"
 			>
-				<section className="center-center w-full max-w-[1064px] flex-col gap-10 md:flex-row lg:gap-20">
+				<Image
+					src="/texture-background.webp"
+					alt=""
+					width={1280}
+					height={646}
+					className="absolute bottom-0 left-0 right-0 z-10 h-full max-h-[700px] w-full object-cover md:object-fill object-bottom"
+				/>
+				<section className="center-center z-20 w-full max-w-[1064px] flex-col gap-1 md:flex-row lg:gap-20 lg:p-20">
 					<div className="flex w-full max-w-[420px] flex-col items-center justify-center gap-4 md:items-start">
 						<h3 className="mb-2 text-2xl font-[600] md:text-3xl">
 							¿Quiénes somos?
@@ -30,14 +37,14 @@ export default function About() {
 						</p>
 					</div>
 					<Image
-						src="/avatar-about.png"
+						src="/avatar-about.webp"
 						alt="banner-about"
 						width={441}
 						height={416}
 						className="aspect-square sm:w-1/2"
 					/>
 				</section>
-				<section className="center-center max-w-[1064px] flex-col gap-4">
+				<section className="center-center z-20 max-w-[1064px] flex-col gap-4">
 					<h3 className="text-2xl font-[600] lg:text-3xl">
 						¿Por qué y para qué?
 					</h3>
@@ -46,63 +53,63 @@ export default function About() {
 						de los procesos internos, permitiendo:
 					</p>
 					<div className="flex max-w-[650px] flex-wrap items-center justify-center gap-4">
-						<div className="center-center aspect-square w-[140px] flex-col gap-4 rounded-lg bg-white p-1 shadow-lg shadow-[#08B3CE25] lg:w-[169px]">
+						<div className="center-center aspect-square w-[140px] flex-col gap-4 rounded-lg bg-white p-1 shadow-lg shadow-[#08B3CE25] lg:w-[169px] lg:p-2">
 							<Image
-								src="/icon1.png"
+								src="/icon1.webp"
 								alt="icon1"
 								width={60}
 								height={60}
 								className="aspect-square w-[45%]"
 							/>
-							<span className="text-center text-[11px] font-[600] lg:text-sm">
+							<span className="text-center text-[11px] font-[600] lg:h-[60px] lg:text-sm">
 								Minimizar costos
 							</span>
 						</div>
-						<div className="center-center aspect-square w-[140px] flex-col gap-4 rounded-lg bg-white p-1 shadow-lg shadow-[#08B3CE25] lg:w-[169px]">
+						<div className="center-center aspect-square w-[140px] flex-col gap-4 rounded-lg bg-white p-1 shadow-lg shadow-[#08B3CE25] lg:w-[169px] lg:p-2">
 							<Image
-								src="/icon2.png"
+								src="/icon2.webp"
 								alt="icon2"
 								width={60}
 								height={60}
 								className="aspect-square w-[45%]"
 							/>
-							<span className="text-center text-[11px] font-[600] lg:text-sm">
+							<span className="text-center text-[11px] font-[600] lg:h-[60px] lg:text-sm">
 								Disminuir el riesgo operativo y económico
 							</span>
 						</div>
-						<div className="center-center aspect-square w-[140px] flex-col gap-4 rounded-lg bg-white p-1 shadow-lg shadow-[#08B3CE25] lg:w-[169px]">
+						<div className="center-center aspect-square w-[140px] flex-col gap-4 rounded-lg bg-white p-1 shadow-lg shadow-[#08B3CE25] lg:w-[169px] lg:p-2">
 							<Image
-								src="/icon3.png"
+								src="/icon3.webp"
 								alt="icon3"
 								width={60}
 								height={60}
 								className="aspect-square w-[45%]"
 							/>
-							<span className="text-center text-[11px] font-[600] lg:text-sm">
+							<span className="text-center text-[11px] font-[600] lg:h-[60px] lg:text-sm">
 								Disminuir errores humanos
 							</span>
 						</div>
-						<div className="center-center aspect-square w-[140px] flex-col gap-4 rounded-lg bg-white p-1 shadow-lg shadow-[#08B3CE25] lg:w-[169px]">
+						<div className="center-center aspect-square w-[140px] flex-col gap-4 rounded-lg bg-white p-1 shadow-lg shadow-[#08B3CE25] lg:w-[169px] lg:p-2">
 							<Image
-								src="/icon4.png"
+								src="/icon4.webp"
 								alt="icon4"
 								width={60}
 								height={60}
 								className="aspect-square w-[45%]"
 							/>
-							<span className="text-center text-[11px] font-[600] lg:text-sm">
+							<span className="text-center text-[11px] font-[600] lg:h-[60px] lg:text-sm">
 								Maximizar la eficiencia
 							</span>
 						</div>
-						<div className="center-center aspect-square w-[140px] flex-col gap-4 rounded-lg bg-white p-1 shadow-lg shadow-[#08B3CE25] lg:w-[169px]">
+						<div className="center-center aspect-square w-[140px] flex-col gap-4 rounded-lg bg-white p-1 shadow-lg shadow-[#08B3CE25] lg:w-[169px] lg:p-2">
 							<Image
-								src="/icon5.png"
+								src="/icon5.webp"
 								alt="icon5"
 								width={60}
 								height={60}
 								className="aspect-square w-[45%]"
 							/>
-							<span className="text-center text-[11px] font-[600] lg:text-sm">
+							<span className="text-center text-[11px] font-[600] lg:h-[60px] lg:text-sm">
 								Mejorar la experiencia del cliente
 							</span>
 						</div>

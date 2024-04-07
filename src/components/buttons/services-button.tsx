@@ -1,5 +1,6 @@
 "use client";
 import { useState } from "react";
+import { Icons } from "@/components/icons";
 
 export default function ServicesButton() {
 	const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -11,26 +12,11 @@ export default function ServicesButton() {
 					className="flex items-center justify-center gap-1 hover:fill-amber-100 hover:text-[#08B3CE] hover:underline"
 				>
 					Nuestros servicios
-					<svg
-						xmlns="http://www.w3.org/2000/svg"
-						width="12"
-						height="12"
-						viewBox="0 0 12 7"
-						fill="none"
-						className={
-							isMenuOpen
-								? "rotate-180 transform"
-								: "stroke-[#08B3CE]"
-						}
-					>
-						<path
-							d="M1 1L6 5.5L11 1"
-							stroke="currentColor"
-							stroke-width="1.3"
-							stroke-linecap="round"
-							stroke-linejoin="round"
-						/>
-					</svg>
+					<Icons.arrow_down className={
+						isMenuOpen
+							? "rotate-180 transform"
+							: "stroke-[#08B3CE]"
+					} />
 				</button>
 
 				<div
