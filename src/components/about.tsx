@@ -15,7 +15,7 @@ export default function About() {
 					alt=""
 					width={1280}
 					height={646}
-					className="animate-scale absolute bottom-0 left-0 right-0 z-10 h-full max-h-[700px] w-full object-cover object-bottom md:object-fill"
+					className="absolute bottom-0 left-0 right-0 z-10 h-full max-h-[700px] w-full object-cover object-bottom md:object-fill"
 				/>
 				<motion.section
 					className="center-center z-20 w-full max-w-[1064px] flex-col gap-1 md:flex-row lg:gap-20 lg:p-20"

@@ -7,7 +7,7 @@ export default function Footer() {
 		<>
 			<footer className="border-gradient relative bg-gradient-to-b from-[#08B3CE50] to-transparent">
 				<motion.div
-					className="mx-auto flex w-full max-w-7xl flex-col items-center justify-center gap-4 px-8 pb-20 pt-5 lg:h-[164px] lg:flex-row lg:items-start lg:justify-between lg:px-20"
+					className="mx-auto flex w-full max-w-7xl flex-col items-center justify-center gap-4 px-8 pb-20 pt-5 lg:h-[164px] sm:flex-row lg:items-start sm:justify-between lg:px-20"
 					initial={{ opacity: 0, y: 200 }}
 					animate={{
 						opacity: 1,
