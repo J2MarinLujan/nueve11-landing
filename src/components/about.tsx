@@ -1,6 +1,7 @@
 "use client";
 import Image from "next/image";
 import { motion } from "framer-motion";
+
 export default function About() {
 	return (
 		<>
@@ -73,8 +74,9 @@ export default function About() {
 						de los procesos internos, permitiendo:
 					</p>
 					<div className="flex max-w-[650px] flex-wrap items-center justify-center gap-4">
-						<motion.div
-							className="center-center aspect-square w-[140px] flex-col gap-4 rounded-lg bg-white p-1 shadow-lg shadow-[#08B3CE25] lg:w-[169px] lg:p-2"
+						<motion.a
+							href="#servicio1"
+							className="center-center service-item aspect-square w-[140px] flex-col gap-4 rounded-lg bg-white p-1 shadow-lg shadow-[#08B3CE25] transition-all duration-500 ease-in-out hover:scale-110 lg:w-[169px] lg:p-2"
 							initial={{ opacity: 0, y: 20 }}
 							animate={{
 								opacity: 1,
@@ -92,9 +94,10 @@ export default function About() {
 							<span className="text-center text-[11px] font-[600] lg:h-[60px] lg:text-sm">
 								Minimizar costos
 							</span>
-						</motion.div>
-						<motion.div
-							className="center-center aspect-square w-[140px] flex-col gap-4 rounded-lg bg-white p-1 shadow-lg shadow-[#08B3CE25] lg:w-[169px] lg:p-2"
+						</motion.a>
+						<motion.a
+							href="#servicio2"
+							className="center-center service-item aspect-square w-[140px] flex-col gap-4 rounded-lg bg-white p-1 shadow-lg shadow-[#08B3CE25] transition-all duration-500 ease-in-out hover:scale-110 lg:w-[169px] lg:p-2"
 							initial={{ opacity: 0, y: 20 }}
 							animate={{
 								opacity: 1,
@@ -112,9 +115,10 @@ export default function About() {
 							<span className="text-center text-[11px] font-[600] lg:h-[60px] lg:text-sm">
 								Disminuir el riesgo operativo y económico
 							</span>
-						</motion.div>
-						<motion.div
-							className="center-center aspect-square w-[140px] flex-col gap-4 rounded-lg bg-white p-1 shadow-lg shadow-[#08B3CE25] lg:w-[169px] lg:p-2"
+						</motion.a>
+						<motion.a
+							href="#servicio3"
+							className="center-center service-item aspect-square w-[140px] flex-col gap-4 rounded-lg bg-white p-1 shadow-lg shadow-[#08B3CE25] transition-all duration-500 ease-in-out hover:scale-110 lg:w-[169px] lg:p-2"
 							initial={{ opacity: 0, y: 20 }}
 							animate={{
 								opacity: 1,
@@ -132,9 +136,10 @@ export default function About() {
 							<span className="text-center text-[11px] font-[600] lg:h-[60px] lg:text-sm">
 								Disminuir errores humanos
 							</span>
-						</motion.div>
-						<motion.div
-							className="center-center aspect-square w-[140px] flex-col gap-4 rounded-lg bg-white p-1 shadow-lg shadow-[#08B3CE25] lg:w-[169px] lg:p-2"
+						</motion.a>
+						<motion.a
+							href="#servicio4"
+							className="center-center service-item aspect-square w-[140px] flex-col gap-4 rounded-lg bg-white p-1 shadow-lg shadow-[#08B3CE25] transition-all duration-500 ease-in-out hover:scale-110 lg:w-[169px] lg:p-2"
 							initial={{ opacity: 0, y: 20 }}
 							animate={{
 								opacity: 1,
@@ -152,9 +157,10 @@ export default function About() {
 							<span className="text-center text-[11px] font-[600] lg:h-[60px] lg:text-sm">
 								Maximizar la eficiencia
 							</span>
-						</motion.div>
-						<motion.div
-							className="center-center aspect-square w-[140px] flex-col gap-4 rounded-lg bg-white p-1 shadow-lg shadow-[#08B3CE25] lg:w-[169px] lg:p-2"
+						</motion.a>
+						<motion.a
+							href="#servicio5"
+							className="center-center service-item aspect-square w-[140px] flex-col gap-4 rounded-lg bg-white p-1 shadow-lg shadow-[#08B3CE25] transition-all duration-500 ease-in-out hover:scale-110 lg:w-[169px] lg:p-2"
 							initial={{ opacity: 0, y: 20 }}
 							animate={{
 								opacity: 1,
@@ -172,7 +178,7 @@ export default function About() {
 							<span className="text-center text-[11px] font-[600] lg:h-[60px] lg:text-sm">
 								Mejorar la experiencia del cliente
 							</span>
-						</motion.div>
+						</motion.a>
 					</div>
 				</motion.section>
 			</motion.div>

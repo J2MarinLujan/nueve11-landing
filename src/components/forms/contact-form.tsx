@@ -186,7 +186,7 @@ export default function ContactForm() {
 					/>
 					<button
 						type="submit"
-						className="h-8 w-32 rounded-md bg-[#08B3CE] text-white"
+						className="h-8 w-32 rounded-md bg-[#08B3CE] text-white transition-all duration-300 ease-in-out hover:bg-[#0A4E5C]"
 					>
 						Enviar
 					</button>

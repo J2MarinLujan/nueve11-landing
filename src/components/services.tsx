@@ -10,7 +10,7 @@ export default function Services() {
 				</h3>
 				<div className="center-center w-full flex-col gap-14">
 					<motion.section
-						id="service1"
+						id="servicio1"
 						className="flex w-full max-w-[1064px] flex-col items-start justify-center gap-4"
 						initial={{ opacity: 0, x: 200 }}
 						animate={{
@@ -24,7 +24,7 @@ export default function Services() {
 						</span>
 						<Image
 							src="/service1.webp"
-							alt="service1"
+							alt="servicio1"
 							width={1064}
 							height={396}
 						/>
@@ -35,7 +35,7 @@ export default function Services() {
 						</p>
 					</motion.section>
 					<motion.section
-						id="service2"
+						id="servicio2"
 						className="flex w-full max-w-[1064px] flex-col items-start justify-center gap-4"
 						initial={{ opacity: 0, x: -200 }}
 						animate={{
@@ -49,7 +49,7 @@ export default function Services() {
 						</span>
 						<Image
 							src="/service2.webp"
-							alt="service2"
+							alt="servicio2"
 							width={1064}
 							height={396}
 						/>
@@ -69,7 +69,7 @@ export default function Services() {
 						</p>
 					</motion.section>
 					<motion.section
-						id="service3"
+						id="servicio3"
 						className="flex w-full max-w-[1064px] flex-col items-start justify-center gap-4"
 						initial={{ opacity: 0, x: 200 }}
 						animate={{
@@ -83,7 +83,7 @@ export default function Services() {
 						</span>
 						<Image
 							src="/service3.webp"
-							alt="service3"
+							alt="servicio3"
 							width={1064}
 							height={396}
 						/>
@@ -96,7 +96,7 @@ export default function Services() {
 						</p>
 					</motion.section>
 					<motion.section
-						id="service4"
+						id="servicio4"
 						className="flex w-full max-w-[1064px] flex-col items-start justify-center gap-4"
 						initial={{ opacity: 0, x: -200 }}
 						animate={{
@@ -111,7 +111,7 @@ export default function Services() {
 						</span>
 						<Image
 							src="/service4.webp"
-							alt="service4"
+							alt="servicio4"
 							width={1064}
 							height={396}
 						/>
@@ -122,7 +122,7 @@ export default function Services() {
 						</p>
 					</motion.section>
 					<motion.section
-						id="service5"
+						id="servicio5"
 						className="flex w-full max-w-[1064px] flex-col items-start justify-center gap-4"
 						initial={{ opacity: 0, x: 200 }}
 						animate={{
@@ -136,7 +136,7 @@ export default function Services() {
 						</span>
 						<Image
 							src="/service5.webp"
-							alt="service5"
+							alt="servicio5"
 							width={1064}
 							height={396}
 						/>

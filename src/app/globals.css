@@ -117,3 +117,8 @@ body {
 		transform: scale(0.9);
 	}
 }
+
+.service-item:hover {
+	transform: scale(1.1) !important;
+	transition-duration: 500ms;
+}
